@@ -8,7 +8,8 @@
   z-index: 10;
 
   &.scrolled {
-    background: #58555d;
+    color: #4b3b36;
+    background: #ffead8;
   }
 
   @include media(desktop) {
@@ -18,7 +19,8 @@
 }
 
 .header-menu {
-  background: #78e4fa;
+  color: #4b3b36;
+  background: #ffead8;
 }
 
 .header-container {
@@ -50,21 +52,23 @@
 }
 
 .nav-list-link {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #f5f2eb;
+  color: #ffead8;
+  color: #4b3b36;
+
   transition: all 0.3s ease-in-out;
 
   &:hover,
   &.active {
-    color: #ff9735;
+    color: #4b3b36;
   }
 }
 
 .nav-list-link.active {
-  color: #ff9735;
+  color: #4b3b36;
 }
 
 .nav-btn {

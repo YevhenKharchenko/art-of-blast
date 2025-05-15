@@ -1,5 +1,5 @@
 .footer {
-  background: #78e4fa;
+  background: #f53232;
   padding-top: 42px;
   padding-bottom: 42px;
 
@@ -32,11 +32,11 @@
 }
 
 .footer-link {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.5;
-  color: #58555d;
+  color: #4b3b36;
   transition: color 0.3s ease-in-out;
 
   &:hover,
@@ -45,11 +45,11 @@
 }
 
 .footer-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #58555d;
+  color: #4b3b36;
 
   @include media(desktop) {
     text-align: center;

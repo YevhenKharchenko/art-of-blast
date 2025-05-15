@@ -1,19 +1,26 @@
 .hero-section {
-  padding-top: 100px;
+  padding-top: 96px;
   padding-bottom: 536px;
-  background-image: url(../img/hero/hero-cat-mob.png),
-    url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom 80px center, top center;
-  background-size: auto, auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 126px;
-    padding-bottom: 591px;
-    background-image: url(../img/hero/hero-steps-desk.png),
-      url(../img/hero/hero-bg-desk.jpg);
-    background-position: bottom 150px right 81px, top center;
+    padding-bottom: 530px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-position: top center;
     max-width: 1440px;
     margin: 0 auto;
+  }
+}
+
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin-right: 0;
   }
 }
