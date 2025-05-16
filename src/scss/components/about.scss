@@ -1,8 +1,10 @@
-.about-section {
+.about-bg-wrapper {
   padding-bottom: 80px;
 
   @include media(desktop) {
     padding-bottom: 245px;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
   }
 }

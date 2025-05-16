@@ -1,26 +1,29 @@
 .header {
   background: transparent;
   padding-top: 48px;
-  padding-bottom: 24px;
+  padding-bottom: 14px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   &.scrolled {
-    color: #4b3b36;
     background: #ffead8;
+
+    .nav-list-link {
+      color: #4b3b36;
+
+      &:hover,
+      &.active {
+        color: #f53232;
+      }
+    }
   }
 
   @include media(desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-}
-
-.header-menu {
-  color: #4b3b36;
-  background: #ffead8;
 }
 
 .header-container {
@@ -57,18 +60,18 @@
   font-size: 16px;
   line-height: 1.5;
   color: #ffead8;
-  color: #4b3b36;
-
   transition: all 0.3s ease-in-out;
-
-  &:hover,
-  &.active {
-    color: #4b3b36;
-  }
 }
 
 .nav-list-link.active {
+}
+
+.privacy-body .nav-list-link {
   color: #4b3b36;
+}
+
+.privacy-body .menu-icon {
+  fill: #4b3b36;
 }
 
 .nav-btn {
@@ -81,13 +84,10 @@
   }
 }
 
-.close-btn {
-  display: none;
-  background-color: transparent;
-  width: 48px;
-  height: 48px;
+.menu-icon {
+  fill: #fff6ef;
+}
 
-  @include media(desktop) {
-    display: none;
-  }
+.menu-icon-scrolled {
+  fill: #4b3b36;
 }

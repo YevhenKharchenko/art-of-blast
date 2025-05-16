@@ -13,7 +13,7 @@
       <path d="m8.533 25.333-1.867-1.867 7.467-7.467-7.467-7.467 1.867-1.867L16 14.132l7.467-7.467 1.867 1.867-7.467 7.467 7.467 7.467-1.867 1.867L16 17.866l-7.467 7.467z"/>
     </symbol>
     <symbol id="icon-menu" viewBox="0 0 32 32">
-      <path fill="#fff6ef" d="M4 24v-2h24v2H4zm0-7v-2h24v2H4zm0-7V8h24v2H4z" style="fill:var(--color2, #fff6ef)"/>
+      <path d="M4 24v-2h24v2H4zm0-7v-2h24v2H4zm0-7V8h24v2H4z"/>
     </symbol>
   </defs>
 </svg>

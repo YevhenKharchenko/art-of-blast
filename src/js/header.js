@@ -2,20 +2,17 @@ const contextMenu = document.querySelector('.context-menu');
 const menuBtn = document.querySelector('.nav-btn');
 const closeContextBtn = document.querySelector('.close-btn');
 const header = document.querySelector('.header');
+const menuIcon = document.querySelector('.menu-icon');
 
 function updateHeaderState() {
   const scrolled = window.scrollY > 0;
-  const menuOpen = contextMenu.classList.contains('is-open');
 
-  if (menuOpen) {
-    header.classList.add('header-menu');
-    header.classList.remove('scrolled');
-  } else if (scrolled) {
+  if (scrolled) {
     header.classList.add('scrolled');
-    header.classList.remove('header-menu');
+    menuIcon.classList.add('menu-icon-scrolled');
   } else {
     header.classList.remove('scrolled');
-    header.classList.remove('header-menu');
+    menuIcon.classList.remove('menu-icon-scrolled');
   }
 }
 
