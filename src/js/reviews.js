@@ -17,12 +17,6 @@ reviewsSwiper = new Swiper('.reviews-swiper-container', {
     delay: 2500,
     disableOnInteraction: false,
   },
-  breakpoints: {
-    1440: {
-      initialSlide: 0,
-      slidesPerView: 4,
-    },
-  },
   on: {
     init: () => {
       document.querySelector('.reviews-swiper-container').classList.add('show');

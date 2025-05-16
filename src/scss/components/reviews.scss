@@ -2,23 +2,17 @@
   padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-bottom: 150px;
+    padding-bottom: 140px;
   }
 }
 
-.reviews-title {
-  margin-bottom: 0;
-}
-
 .reviews-section-wrapper {
-  padding-top: 107.5px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 113.5px;
     max-width: 1440px;
   }
 }
@@ -34,13 +28,13 @@
 }
 
 .reviews-swiper-container {
-  max-width: 305px;
+  max-width: 335px;
   margin-left: auto;
   margin-right: auto;
   visibility: hidden;
 
   @include media(desktop) {
-    max-width: 1440px;
+    display: none;
   }
 }
 
@@ -50,39 +44,62 @@
 
 .reviews-slide {
   padding: 0;
-  max-width: 305px;
-  border-radius: 12px;
-  padding: 92px 22px 48px 22px;
-  background: #828183;
-  height: 257px !important;
-  position: relative;
+  max-width: 335px;
+  border-radius: 16px;
+  padding: 22px 25px;
+  background: #fff6ef;
+  height: 231px !important;
 }
 
-.reviews-subtitle {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #ff9735;
-  margin-bottom: 22px;
+.reviews-rating-img {
+  margin-bottom: 16px;
 }
 
 .reviews-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  color: #f5f2eb;
+  color: #4b3b36;
+  margin-bottom: 18px;
 }
 
-.reviews-picture-wrapper {
+.reviews-avatar-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -80.5px;
-  left: 0;
-  right: 0;
+  justify-content: start;
+  gap: 24px;
+}
+
+.reviews-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f53232;
+}
+
+.reviews-list-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.reviews-list-item-desk {
+  padding: 0;
+  max-width: 413px;
+  border-radius: 16px;
+  padding: 22px 25px;
+  background: #fff6ef;
+  height: 213px;
+}
+
+.reviews-list-item-puzzle {
+  padding: 0 27px;
 }
