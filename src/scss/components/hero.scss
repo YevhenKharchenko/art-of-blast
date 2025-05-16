@@ -1,6 +1,6 @@
 .hero-section {
   padding-top: 96px;
-  padding-bottom: 536px;
+  padding-bottom: 530px;
   background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -8,7 +8,7 @@
 
   @include media(desktop) {
     padding-top: 126px;
-    padding-bottom: 530px;
+    padding-bottom: 417px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
     background-position: top center;
     max-width: 1440px;

@@ -3,7 +3,6 @@ import 'swiper/css/bundle';
 
 const galleryLeftArrow = document.getElementById('galleryLeftArrow');
 const galleryRightArrow = document.getElementById('galleryRightArrow');
-const galleryDots = document.querySelectorAll('.dot');
 
 let gallerySwiper;
 
@@ -31,7 +30,6 @@ gallerySwiper = new Swiper('.gallery-swiper-container', {
       document.querySelector('.gallery-swiper-container').classList.add('show');
     },
     slideChange: function () {
-      updateGalleryDots(this.realIndex);
       updateGalleryArrows(this);
     },
   },
@@ -39,39 +37,10 @@ gallerySwiper = new Swiper('.gallery-swiper-container', {
 
 updateGalleryArrows(gallerySwiper);
 
-function updateGalleryDots(index) {
-  let dotIndex = 0;
-
-  if (window.innerWidth >= 1440) {
-    const totalSlides = gallerySwiper.slides.length;
-    const slidesPerView = gallerySwiper.params.breakpoints[1440].slidesPerView;
-
-    if (index === 0) {
-      dotIndex = 0;
-    } else if (index >= totalSlides - slidesPerView) {
-      dotIndex = 2;
-    } else {
-      dotIndex = 1;
-    }
-  } else {
-    dotIndex = index;
-  }
-
-  galleryDots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === dotIndex);
-  });
-}
-
 function updateGalleryArrows(swiper) {
   galleryLeftArrow.disabled = swiper.isBeginning;
   galleryRightArrow.disabled = swiper.isEnd;
 }
-
-galleryDots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    gallerySwiper.slideTo(index);
-  });
-});
 
 galleryLeftArrow.addEventListener('click', () => {
   gallerySwiper.slidePrev();
